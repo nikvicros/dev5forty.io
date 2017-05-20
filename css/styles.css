@@ -138,9 +138,10 @@ section {
 /* The Close Button */
 .close {
     color: white;
-    float: right;
     font-size: 28px;
     font-weight: bold;
+    float: right;
+    
 }
 
 .close:hover,
@@ -152,7 +153,8 @@ section {
 
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    height: 50px;
+    background-color: #00d1b2;
     color: white;
 }
 
@@ -160,6 +162,6 @@ section {
 
 .modal-footer {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #00d1b2;
     color: white;
 }
