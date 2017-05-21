@@ -7,12 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Core CSS -->
     <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Bulma CSS minified -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css" integrity="sha256-n+Ch7oRdzZ9+8/inp+1mK/0Bt4T/2PSmo4L6YGoDiVM="
-        crossorigin="anonymous" />
-
-    <!-- Compiled and minified CSS -->
+    <!-- Material Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <!-- Materialized CSS minified -->
     <link rel="stylesheet" href="css/materialize.min.css">
@@ -26,17 +21,18 @@
 <body>
     <header>
         <!-- Material Dropdown Structure -->
-        <div class="fixed-action-btn horizontal">
+        <div class="fixed-action-btn toolbar">
             <a class="btn-floating btn-large blue">
-                <i class="large material-icons">menu</i>
-            </a>
+      <i class="large material-icons">menu</i>
+    </a>
             <ul>
-                <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-                <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-                <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-                <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">insert_chart</i></a></li>
+                <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">format_quote</i></a></li>
+                <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">publish</i></a></li>
+                <li class="waves-effect waves-light"><a href="#our-process"><i class="material-icons">attach_file</i><span>Our Process</span></a></li>
             </ul>
         </div>
+
 
     </header>
 
@@ -56,8 +52,8 @@
                 </h1>
 
                 <div class="block">
-                    <a a href="#what-we-do" class="waves-effect waves-light btn light-blue darken-4">Learn More</a>
-                    <a href="#latest-blog-posts" class="waves-effect waves-light btn light-blue darken-4">Our Blog</a>
+                    <a a href="#what-we-do" class="waves-effect waves-light btn  light-blue darken-1">Learn More</a>
+                    <a href="#latest-blog-posts" class="waves-effect waves-light btn  light-blue darken-1">Our Blog</a>
                 </div>
             </div>
         </div>
@@ -67,11 +63,8 @@
     <!-- What-We-Do -->
     <section id="what-we-do">
         <div class="container">
-            <br>
-            <br>
-            <br>
-            <div class="columns is-mobile">
-                <div class="column is-half has-text-left">
+            <div class="row">
+                <div class="col s6 crafting-side">
                     <h1>We learn through <span class="gradient-words" style="background-image: linear-gradient(to right, rgb(22, 214, 217), rgb(150, 204, 41));">crafting</span>.</h1>
                     <br>
                     <p>Then apply everything we know to create game-changing digital products and services for our clients.
@@ -82,221 +75,159 @@
                     <br>
                     <p>Then rapidly bringing them to life.</p>
                     <br>
-                    <a class="button" id="myBtn" data-target="#myModal"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>&nbsp;Hire Us</a>
+                    <a class="waves-effect waves-light btn  light-blue darken-1" href="#contactButton"><i class="material-icons left">done</i>hire us!</a>
                 </div>
-
-                <div class="is-half learn-graphic">
-                    <img id="learn-image"src="assets/img/learn.png">
+                <div class="col s6">
+                    <img id="learn-image" src="assets/img/learn.png">
                 </div>
-                <hr>
             </div>
         </div>
     </section>
 
     <section id="our-process">
         <div class="container">
-            <h1><span class="gradient-words" style="background-image: linear-gradient(to right, rgb(255, 191, 2), rgb(237, 0, 130));">Transparency</span> Through Process.</h1>
+            <h1><span class="gradient-words" style="background-image: linear-gradient(to right, rgb(255, 191, 2), rgb(237, 0, 130));">Transparency</span>Through
+                Process.
+            </h1>
             <br>
-            <div class="columns is-mobile">
-                <div class="column is-one-quarter has-text-centered">
+            <div class="row">
+                <div class="col s3">
                     <div class="card">
-                        <div class="card-content">
+                        <div class="card-content center-align">
                             <i class="fa fa-dot-circle-o fa-5x" aria-hidden="true"></i>
                             <br>
                             <h5 class="our-message">discovery and strategy</h5>
-
-                            <p class="has-text-left">Innovate and get ahead. Define your business goals and validate opportunities with fresh understanding
-                                of what your customers need most.</p><br><br>
+                            <br>
+                            <p class="left-align">Innovate and get ahead. Define your business goals and validate opportunities with fresh understanding
+                                of what your customers need most.</p><br>
                         </div>
                     </div>
                 </div>
-                <div class="column is-one-quarter has-text-centered">
+                <div class="col s3">
                     <div class="card">
-                        <div class="card-content">
+                        <div class="card-content center-align">
                             <i class="fa fa-cubes fa-5x " aria-hidden="true"></i>
                             <br>
                             <h5 class="our-message">design and build</h5>
                             <br>
-                            <p class="has-text-left">Turn your vision into reality. Exceptional software development, engineering and execution sets
+                            <p class="left-align">Turn your vision into reality. Exceptional software development, engineering and execution sets
                                 your company apart.</p><br><br>
                         </div>
                     </div>
                 </div>
-                <div class="column is-one-quarter has-text-centered">
+                <div class="col s3">
                     <div class="card">
-                        <div class="card-content">
+                        <div class="card-content center-align">
                             <i class="fa fa-rocket fa-5x" aria-hidden="true"></i>
                             <br>
                             <h5 class="our-message">launch and scale</h5>
                             <br>
-                            <p class="has-text-left">Ship your product and stay responsive to customers’ changing needs. Your product is out in the
+                            <p class="left-align">Ship your product and stay responsive to customers’ changing needs. Your product is out in the
                                 world: it's time to grow, evolve and deliver ROI.</p><br>
                         </div>
                     </div>
                 </div>
-                <div class="column is-one-quarter has-text-centered">
+                <div class="col s3">
                     <div class="card">
-                        <div class="card-content">
+                        <div class="card-content center-align">
                             <i class="fa fa-heart fa-5x" aria-hidden="true"></i>
                             <br>
-                            <h5 class="our-message">our team promise</h5>
+                            <h5 class="our-message center-align">our team promise</h5>
                             <br>
-                            <p class="has-text-left">Make products that really mean something to your customers. Our teams bake transformative ways
+                            <p class="left-align">Make products that really mean something to your customers. Our teams bake transformative ways
                                 of working into your business along the way.</p><br>
                         </div>
                     </div>
-
                 </div>
             </div>
+        </div>
     </section>
-    <!-- End What-We-Do -->
+    <!-- END OUR-PROCESS -->
 
     <!-- LATEST BLOG POST FRONT PAGE -->
     <div id="latest-blog-posts">
         <div class="container">
-            <div class="columns">
-                <div class="columns">
-                    <div class="column is-half">
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <figure class="image is-48x48">
-                                            <img src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
-                                        </figure>
-                                    </div>
-                                    <div class="media-content">
-                                        <p class="title is-4">John Smith</p>
-                                        <p class="subtitle is-6">@johnsmith</p>
-                                    </div>
-                                </div>
+            <div class="row">
 
-                                <div class="content">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                    <a>#css</a> <a>#responsive</a>
-                                    <br>
-                                    <small>11:09 PM - 1 Jan 2016</small>
-                                </div>
+
+                <div class="col s12 m7">
+                    <h2 class="header"><span class="gradient-words" style="background-image: linear-gradient(to right, rgb(0, 156, 243), rgb(22, 214, 217));">Share</span> Ideas.</h2>
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img src="http://lorempixel.com/100/190/nature/6">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
                             </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <p class="notification is-warning">Auto</p>
-                    </div>
-                    <div class="column">
-                        <p class="notification is-danger">Auto</p>
-                    </div>
                 </div>
+
             </div>
         </div>
-    </div>
 
-    <!-- END LATEST BLOG POST FRONT PAGE -->
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="content has-text-centered">
-                <p>
-                    <strong>dev5forty.io</strong> by <a href="http://dev5forty.io">Nik Rosales</a>. The source code is licensed
-                    <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed
-                    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
-                </p>
-                <p>
-                    <a class="icon" href="https://github.com/nikvicros"><i class="fa fa-github"></i></a>
-                </p>
+        <!-- END LATEST BLOG POST FRONT PAGE -->
+
+        <!-- Footer -->
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Footer Content</h5>
+                        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
-    <!-- Footer End -->
-
-    <!-- MODAL  -->
-    <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">&times;</span>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2014 Copyright Text
+                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                </div>
             </div>
-            <div class="modal-body">
-                <div class="field">
-                    <label class="label">Name</label>
-                    <p class="control has-icons-left has-icons-right">
-                        <input class="input" type="text" placeholder="Jenny">
-                        <span class="icon is-small is-left">
-                        <i class="fa fa-user"></i></span>
-                    </p>
-                </div>
+        </footer>
+        <!-- Footer End -->
 
-                <div class="field">
-                    <label class="label">Phone Number</label>
-                    <p class="control has-icons-left has-icons-right">
-                        <input class="input" type="text" placeholder="867-5309">
-                        <span class="icon is-small is-left">
-                        <i class="fa fa-phone"></i></span>
-                    </p>
-                </div>
-
-                <div class="field">
-                    <label class="label">Email</label>
-                    <p class="control has-icons-left has-icons-right">
-                        <input class="input " type="text" placeholder="hello@email.com">
-                        <span class="icon is-small is-left">
-                        <i class="fa fa-envelope"></i></span>
-                    </p>
-                </div>
-
-                <div class="field">
-                    <label class="label">Subject</label>
-                    <p class="control">
-                        <span class="select">
-                        <select>
-                            <option>Website Creation</option>
-                            <option>App Creation</option>
-                            <option>Consultation</option>
-                            <option>Other</option>
-                        </select>
-                        </span>
-                    </p>
-                </div>
-
-                <div class="field">
-                    <label class="label">Message</label>
-                    <p class="control">
-                        <textarea class="textarea" placeholder="Message"></textarea>
-                    </p>
-                </div>
-
-                <div class="field is-grouped">
-                    <p class="control">
-                        <button class="button is-primary">Send</button>
-                    </p>
-                </div>
+        <!-- MODALS  -->
+        <!-- HIRE US MODAL -->
+        <div id="contactButton" class="modal modal-fixed-footer">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
             </div>
             <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
             </div>
         </div>
-    </div>
-    <!-- END MODAL -->
+        <!-- END MODAL -->
 
 
-    <!-- JS Core -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js">
-    </script
+        <!-- JS Core -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js">
+        </script
     <script src="js/script.js">
-    </script>
-    <script src="js/script.js"></script>
-    <script src="js/materialize.min.js"></script>
+        </script>
+        <script src="js/script.js"></script>
+        <script src="js/materialize.min.js"></script>
 
-    <script src="js/zenscroll-min.js"></script>
-    <!-- JS Core End -->
+        <script src="js/zenscroll-min.js"></script>
+        <!-- JS Core End -->
 
 
 </body>
