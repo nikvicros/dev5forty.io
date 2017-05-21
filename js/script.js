@@ -23,3 +23,15 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
+var options = [
+    {
+        selector: '#learn-image',
+        offset: 0,
+        callback: function (el) {
+            Materialize.fadeInImage($(el));
+        }
+    }
+];
+Materialize.scrollFire(options);

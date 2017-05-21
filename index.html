@@ -5,11 +5,18 @@
     <title>dev5forty.io | Digital Studio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Core CSS minified -->
+    <!-- Core CSS -->
     <link rel="stylesheet" href="css/styles.css">
+
     <!-- Bulma CSS minified -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css" integrity="sha256-n+Ch7oRdzZ9+8/inp+1mK/0Bt4T/2PSmo4L6YGoDiVM="
         crossorigin="anonymous" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <!-- Materialized CSS minified -->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Google Fonts  minified -->
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat+Subrayada:400,700|Rubik+Mono+One" rel="stylesheet">
     <!-- Font Awesome CSS minified -->
@@ -17,15 +24,21 @@
 </head>
 
 <body>
-    <!-- Header Navigation -->
-    <header class="sticky-header">
-        <nav class="nav has-shadow">
-            <div class="nav-right">
-                <a class="nav-item"><i class="fa fa-bars" aria-hidden="true"></i></a>
-            </div>
-        </nav>
+    <header>
+        <!-- Material Dropdown Structure -->
+        <div class="fixed-action-btn horizontal">
+            <a class="btn-floating btn-large blue">
+                <i class="large material-icons">menu</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+            </ul>
+        </div>
+
     </header>
-    <!-- End Header Navigation -->
 
     <!-- HERO -->
     <section id="hero-our-way" class="hero">
@@ -43,7 +56,8 @@
                 </h1>
 
                 <div class="block">
-                    <span><a href="#what-we-do" class="button is-primary is-outlined">Learn More</a></span> <span><a href="#latest-blog-posts" class="button is-primary is-outlined">Our Blog</a> </span>
+                    <a a href="#what-we-do" class="waves-effect waves-light btn light-blue darken-4">Learn More</a>
+                    <a href="#latest-blog-posts" class="waves-effect waves-light btn light-blue darken-4">Our Blog</a>
                 </div>
             </div>
         </div>
@@ -58,7 +72,7 @@
             <br>
             <div class="columns is-mobile">
                 <div class="column is-half has-text-left">
-                    <h1>We learn through crafting.</h1>
+                    <h1>We learn through <span class="gradient-words" style="background-image: linear-gradient(to right, rgb(22, 214, 217), rgb(150, 204, 41));">crafting</span>.</h1>
                     <br>
                     <p>Then apply everything we know to create game-changing digital products and services for our clients.
                     </p>
@@ -72,12 +86,16 @@
                 </div>
 
                 <div class="is-half learn-graphic">
-                    <img src="assets/img/learn.png">
+                    <img id="learn-image"src="assets/img/learn.png">
                 </div>
                 <hr>
             </div>
+        </div>
+    </section>
 
-            <h1>Transparency Through Process. </h1>
+    <section id="our-process">
+        <div class="container">
+            <h1><span class="gradient-words" style="background-image: linear-gradient(to right, rgb(255, 191, 2), rgb(237, 0, 130));">Transparency</span> Through Process.</h1>
             <br>
             <div class="columns is-mobile">
                 <div class="column is-one-quarter has-text-centered">
@@ -85,10 +103,10 @@
                         <div class="card-content">
                             <i class="fa fa-dot-circle-o fa-5x" aria-hidden="true"></i>
                             <br>
-                            <h2 class="our-message">discovery and strategy</h2>
+                            <h5 class="our-message">discovery and strategy</h5>
 
                             <p class="has-text-left">Innovate and get ahead. Define your business goals and validate opportunities with fresh understanding
-                                of what your customers need most.</p><br>
+                                of what your customers need most.</p><br><br>
                         </div>
                     </div>
                 </div>
@@ -97,7 +115,7 @@
                         <div class="card-content">
                             <i class="fa fa-cubes fa-5x " aria-hidden="true"></i>
                             <br>
-                            <h2 class="our-message">design and build</h2>
+                            <h5 class="our-message">design and build</h5>
                             <br>
                             <p class="has-text-left">Turn your vision into reality. Exceptional software development, engineering and execution sets
                                 your company apart.</p><br><br>
@@ -109,7 +127,7 @@
                         <div class="card-content">
                             <i class="fa fa-rocket fa-5x" aria-hidden="true"></i>
                             <br>
-                            <h2 class="our-message">launch and scale</h2>
+                            <h5 class="our-message">launch and scale</h5>
                             <br>
                             <p class="has-text-left">Ship your product and stay responsive to customers’ changing needs. Your product is out in the
                                 world: it's time to grow, evolve and deliver ROI.</p><br>
@@ -121,7 +139,7 @@
                         <div class="card-content">
                             <i class="fa fa-heart fa-5x" aria-hidden="true"></i>
                             <br>
-                            <h2 class="our-message">our promise</h2>
+                            <h5 class="our-message">our team promise</h5>
                             <br>
                             <p class="has-text-left">Make products that really mean something to your customers. Our teams bake transformative ways
                                 of working into your business along the way.</p><br>
@@ -139,9 +157,33 @@
             <div class="columns">
                 <div class="columns">
                     <div class="column is-half">
-                        <p class="notification is-info">
-                            <code class="html">is-half</code>
-                        </p>
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">John Smith</p>
+                                        <p class="subtitle is-6">@johnsmith</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                    <a>#css</a> <a>#responsive</a>
+                                    <br>
+                                    <small>11:09 PM - 1 Jan 2016</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="column">
                         <p class="notification is-warning">Auto</p>
@@ -150,69 +192,68 @@
                         <p class="notification is-danger">Auto</p>
                     </div>
                 </div>
-
             </div>
         </div>
+    </div>
 
-        <!-- END LATEST BLOG POST FRONT PAGE -->
+    <!-- END LATEST BLOG POST FRONT PAGE -->
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="content has-text-centered">
-                    <p>
-                        <strong>dev5forty.io</strong> by <a href="http://dev5forty.io">Nik Rosales</a>. The source code is
-                        licensed
-                        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed
-                        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
-                    </p>
-                    <p>
-                        <a class="icon" href="https://github.com/nikvicros"><i class="fa fa-github"></i></a>
-                    </p>
-                </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>dev5forty.io</strong> by <a href="http://dev5forty.io">Nik Rosales</a>. The source code is licensed
+                    <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed
+                    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+                </p>
+                <p>
+                    <a class="icon" href="https://github.com/nikvicros"><i class="fa fa-github"></i></a>
+                </p>
             </div>
-        </footer>
-        <!-- Footer End -->
+        </div>
+    </footer>
+    <!-- Footer End -->
 
-        <!-- MODAL  -->
-        <div id="myModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <div class="field">
-                        <label class="label">Name</label>
-                        <p class="control has-icons-left has-icons-right">
-                            <input class="input" type="text" placeholder="Jenny">
-                            <span class="icon is-small is-left">
+    <!-- MODAL  -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="field">
+                    <label class="label">Name</label>
+                    <p class="control has-icons-left has-icons-right">
+                        <input class="input" type="text" placeholder="Jenny">
+                        <span class="icon is-small is-left">
                         <i class="fa fa-user"></i></span>
-                        </p>
-                    </div>
+                    </p>
+                </div>
 
-                    <div class="field">
-                        <label class="label">Phone Number</label>
-                        <p class="control has-icons-left has-icons-right">
-                            <input class="input" type="text" placeholder="867-5309">
-                            <span class="icon is-small is-left">
+                <div class="field">
+                    <label class="label">Phone Number</label>
+                    <p class="control has-icons-left has-icons-right">
+                        <input class="input" type="text" placeholder="867-5309">
+                        <span class="icon is-small is-left">
                         <i class="fa fa-phone"></i></span>
-                        </p>
-                    </div>
+                    </p>
+                </div>
 
-                    <div class="field">
-                        <label class="label">Email</label>
-                        <p class="control has-icons-left has-icons-right">
-                            <input class="input " type="text" placeholder="hello@email.com">
-                            <span class="icon is-small is-left">
+                <div class="field">
+                    <label class="label">Email</label>
+                    <p class="control has-icons-left has-icons-right">
+                        <input class="input " type="text" placeholder="hello@email.com">
+                        <span class="icon is-small is-left">
                         <i class="fa fa-envelope"></i></span>
-                        </p>
-                    </div>
+                    </p>
+                </div>
 
-                    <div class="field">
-                        <label class="label">Subject</label>
-                        <p class="control">
-                            <span class="select">
+                <div class="field">
+                    <label class="label">Subject</label>
+                    <p class="control">
+                        <span class="select">
                         <select>
                             <option>Website Creation</option>
                             <option>App Creation</option>
@@ -220,35 +261,42 @@
                             <option>Other</option>
                         </select>
                         </span>
-                        </p>
-                    </div>
-
-                    <div class="field">
-                        <label class="label">Message</label>
-                        <p class="control">
-                            <textarea class="textarea" placeholder="Message"></textarea>
-                        </p>
-                    </div>
-
-                    <div class="field is-grouped">
-                        <p class="control">
-                            <button class="button is-primary">Send</button>
-                        </p>
-                    </div>
+                    </p>
                 </div>
-                <div class="modal-footer">
+
+                <div class="field">
+                    <label class="label">Message</label>
+                    <p class="control">
+                        <textarea class="textarea" placeholder="Message"></textarea>
+                    </p>
+                </div>
+
+                <div class="field is-grouped">
+                    <p class="control">
+                        <button class="button is-primary">Send</button>
+                    </p>
                 </div>
             </div>
+            <div class="modal-footer">
+            </div>
         </div>
-        <!-- END MODAL -->
+    </div>
+    <!-- END MODAL -->
 
 
-        <!-- JS Core -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
-        <script src="js/script.js"></script>
-        <script src="js/zenscroll-min.js"></script>
-        <!-- JS Core End -->
+    <!-- JS Core -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js">
+    </script
+    <script src="js/script.js">
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/materialize.min.js"></script>
+
+    <script src="js/zenscroll-min.js"></script>
+    <!-- JS Core End -->
 
 
 </body>

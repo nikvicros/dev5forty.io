@@ -173,4 +173,14 @@ section {
 
 #latest-blog-posts {
     background-color: #34495e;
+    height: auto;
+    padding: 10px;
+}
+
+#our-process {
+    background-color: #37474f;
+}
+
+#our-process h1 {
+    color: white;
 }
