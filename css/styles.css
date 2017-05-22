@@ -65,8 +65,13 @@ section {
     font-family: 'Rubik Mono One', sans-serif;
 }
 
-#learn-image {
-    width: auto;
+.learn-image {
+    overflow: hidden;
+}
+
+
+#what-we-do  {
+    background-color: #37474f;
 }
 
 
@@ -89,9 +94,6 @@ section {
     color: rgb(237, 0, 130);
 }
 
-.crafting-side {
-    border-right: 1px solid lightgrey;
-}
 
 
 /* ////////////////////////////////
@@ -100,7 +102,7 @@ section {
 
 
 #our-process {
-    background-color: #37474f;
+    background-color: white;
 }
 
 #our-process h1 {
