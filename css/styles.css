@@ -11,8 +11,6 @@ font-family: 'Inconsolata', monospace;
 //////////////////////////////////*/
 
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Montserrat+Subrayada|Rubik+Mono+One');
-
-
 body {
     color: white;
 }
@@ -22,6 +20,7 @@ h2,
 h3 {
     font-family: 'Rubik Mono One', sans-serif;
 }
+
 section {
     height: 100vh;
     font-family: 'Inconsolata', monospace;
@@ -46,27 +45,16 @@ section {
 }
 
 
-/* Navigation */
-
-.sticky-header {
-    background-color: white;
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-}
-
-
 /*////////////////////////////////
         WHAT WE DO SECTION
 //////////////////////////////////*/
-
 
 .our-message {
     font-family: 'Rubik Mono One', sans-serif;
 }
 
-
-#what-we-do  {
+#what-we-do,
+#latest-blog-posts {
     background-color: #37474f;
 }
 
@@ -91,14 +79,16 @@ section {
 }
 
 
-
 /* ////////////////////////////////
     FRONT PAGE LATEST BLOG POST
 //////////////////////////////////*/
 
 
-#our-process {
-    background-color: white;
+/* ////////////////////////////////
+    Footer Content
+//////////////////////////////////*/
+
+footer,
+footer h5 {
+    font-family: 'Inconsolata', monospace;
 }
-
-
