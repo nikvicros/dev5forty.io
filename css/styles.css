@@ -91,4 +91,6 @@ section {
 footer,
 footer h5 {
     font-family: 'Inconsolata', monospace;
+    color: black;
+    
 }
