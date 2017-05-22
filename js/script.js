@@ -9,8 +9,18 @@ $(document)
 
 // ScrollFire Action
 var options = [
+    //Prototype IMage
     {
         selector: '#learn-image',
+        offset: 0,
+        callback: function (el) {
+            Materialize.fadeInImage($(el));
+        }
+    }, 
+    
+    //Collaboration Image
+    {
+        selector: '#collab-image',
         offset: 0,
         callback: function (el) {
             Materialize.fadeInImage($(el));
