@@ -106,7 +106,7 @@ section {
 }
 
 #blog-list {
-    background-color: #37474f;
+    background-image: linear-gradient(to right, rgb(22, 214, 217), rgb(150, 204, 41));
 }
 
 
