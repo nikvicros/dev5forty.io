@@ -26,7 +26,8 @@ section {
     font-family: 'Inconsolata', monospace;
 }
 
-.we-are-540-body-font {
+.we-are-540-body-font,
+#latest-blog-posts {
     font-family: 'Inconsolata', monospace;
 }
 
