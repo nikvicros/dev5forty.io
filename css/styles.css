@@ -100,15 +100,27 @@ section {
     ABOUT PAGE
 //////////////////////////////////*/
 .what-we {
-    background-color: lightgrey;
+    background-color: rgb(150, 204, 41);
     padding: 5px;
     margin: 5px;
 }
+.what-we p {
+    color: white;
+}
 
 .what-its {
-    background-color: lightgrey;
+    background-color: rgb(22, 214, 217);
     padding: 5px;
     margin: 5px
+}
+
+.what-we {
+    color: white;
+}
+
+.about-message-large {
+    background-color: lightcyan;
+    margin-top: 5px;
 }
 
 
