@@ -25,7 +25,16 @@ var options = [
         callback: function (el) {
             Materialize.fadeInImage($(el));
         }
-    }
+    },
+
+    // Staggered Text, About Page
+
+    {
+        selector: '#staggered-text', offset: 400, 
+        callback: function(el) {
+        Materialize.showStaggeredList($(el));
+      } 
+    },
 ];
 
 Materialize.scrollFire(options);
