@@ -23,7 +23,6 @@ h3 {
 }
 
 section {
-    height: 100vh;
     font-family: 'Inconsolata', monospace;
     color: #37474f;
 }
@@ -45,6 +44,14 @@ section {
     -webkit-background-clip: text;
     background-clip: text;
     position: relative;
+}
+
+/*////////////////////////////////
+        FRONT PAGE HERO
+//////////////////////////////////*/
+
+#hero-our-way {
+    height: 100vh;
 }
 
 
