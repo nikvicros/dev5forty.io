@@ -99,7 +99,17 @@ section {
 /* ////////////////////////////////
     ABOUT PAGE
 //////////////////////////////////*/
+.what-we {
+    background-color: lightgrey;
+    padding: 5px;
+    margin: 5px;
+}
 
+.what-its {
+    background-color: lightgrey;
+    padding: 5px;
+    margin: 5px
+}
 
 
 
