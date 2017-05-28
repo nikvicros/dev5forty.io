@@ -29,3 +29,10 @@ var options = [
 ];
 
 Materialize.scrollFire(options);
+
+
+// Contact Forms
+
+ $(document).ready(function() {
+    $('select').material_select();
+  });

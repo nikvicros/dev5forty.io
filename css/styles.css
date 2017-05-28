@@ -119,12 +119,18 @@ section {
 /* ////////////////////////////////
     Footer Content
 //////////////////////////////////*/
-
 footer,
 footer h5 {
     font-family: 'Inconsolata', monospace;
     color: black;
     
+}
+
+/* ////////////////////////////////
+    TALK TO US / CONTACT PAGE
+//////////////////////////////////*/
+.talk-to-us h2 {
+    color: #37474f
 }
 
 
