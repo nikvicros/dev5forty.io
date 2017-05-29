@@ -99,13 +99,15 @@ section {
 /* ////////////////////////////////
     ABOUT PAGE
 //////////////////////////////////*/
+
+.what-we p {
+    color: #37474f;
+}
+
 .what-we {
-    background-color:#69F0AE;
+    background-color:#E1F5FE;
     padding: 5px;
     margin: 5px;
-}
-.what-we p {
-    color: white;
 }
 
 .what-its {
